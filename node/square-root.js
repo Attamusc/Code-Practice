@@ -2,7 +2,7 @@ var squareRoot = exports.squareRoot = function (num, precision) {
   var prev = num,
       guess = num/2,
       delta = prev - guess,
-      threshold = .01;
+      threshold = 0.01;
       i = 0;
       console.log(threshold);
 
