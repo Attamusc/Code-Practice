@@ -3,18 +3,12 @@ var squareRoot = exports.squareRoot = function (num, precision) {
       guess = num/2,
       delta = prev - guess,
       threshold = 0.01;
-      i = 0;
-      console.log(threshold);
 
       while(delta > threshold) {
-        console.log("iteration: " + i + " delta: " + delta + " prev: " + prev + " guess: " + guess);
         prev = guess;
         guess = (guess + (num / guess)) / 2;
         delta = prev - guess;
-        i++;
       }
 
-      return guess;
+      return guess.toFixed(3);
 };
-
-console.log(squareRoot(16));
