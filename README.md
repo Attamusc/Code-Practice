@@ -5,10 +5,10 @@ Repo for practicing implementing common technical questions. Mainly for keeping 
 ## Solved
 
 * Square Root (node)
+* Dutch National Flag Problem (node)
 
 ## Todo
 
-* Dutch National Flag Problem
 * Knapsack Problem
 * Subset Sum Problem
 * Print Tree by Depth
