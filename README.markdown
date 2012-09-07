@@ -9,6 +9,11 @@ Repo for practicing implementing common technical questions. Mainly for keeping 
 
 ## Todo
 
+* Print Tree by Depth (Breadth-first Search)
 * Knapsack Problem
 * Subset Sum Problem
-* Print Tree by Depth
+* Quicksort
+* RADIX sort
+* Red-Black Tree
+* Visitor Pattern Example
+* 'Tell, Don't Ask' Pattern Example
