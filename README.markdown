@@ -10,8 +10,8 @@ Repo for practicing implementing common technical questions. Mainly for keeping 
 
 ## Todo
 
-* Knapsack Problem
 * Subset Sum Problem
+* Knapsack Problem
 * Quicksort
 * RADIX sort
 * Red-Black Tree

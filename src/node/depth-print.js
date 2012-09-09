@@ -1,5 +1,3 @@
-// TODO: Solve the 'Print by Depth Level' problem
-
 // A stupid simple Queue implementation
 var Queue = function (array) {
   this.queue_ds = array ? array.slice(0) : [];
