@@ -6,10 +6,10 @@ Repo for practicing implementing common technical questions. Mainly for keeping 
 
 * Square Root (node)
 * Dutch National Flag Problem (node)
+* Print Tree by Depth (Breadth-first Search) (node)
 
 ## Todo
 
-* Print Tree by Depth (Breadth-first Search)
 * Knapsack Problem
 * Subset Sum Problem
 * Quicksort
