@@ -4,6 +4,7 @@ dfs = require("../../src/node/dnfp").dutchFlagSort
 Queue = require("../../src/node/depth-print").Queue
 BinaryTree = require("../../src/node/depth-print").BinaryTree
 breadthPrint = require("../../src/node/depth-print").breadthPrint
+subsetSum = require("../../src/node/subset-sum").subsetSum
 
 describe "Square Root", ->
   it "should work for 4", ->
@@ -45,46 +46,65 @@ describe "Queue", ->
       a_queue.dequeue();
       assert.deepEqual(a_queue.queue_ds, [2, 3])
 
-  describe "Binary Tree", ->
-    it "should be able to be constructed", ->
-      a_btree = new BinaryTree(4)
-      assert.notEqual(a_btree, null)
+describe "Binary Tree", ->
+  it "should be able to be constructed", ->
+    a_btree = new BinaryTree(4)
+    assert.notEqual(a_btree, null)
 
-    it "should be able to be added to", ->
-      a_btree = new BinaryTree(4)
-      b_btree = new BinaryTree(2)
+  it "should be able to be added to", ->
+    a_btree = new BinaryTree(4)
+    b_btree = new BinaryTree(2)
 
-      a_btree.setLeft(b_btree)
+    a_btree.setLeft(b_btree)
 
-      assert.equal(a_btree.left(), b_btree)
+    assert.equal(a_btree.left(), b_btree)
 
-  describe "Breadth-first Print", ->
-    it "should be able to work for a root-only tree", ->
-      root = new BinaryTree(5);
-      assert.equal(breadthPrint(root), "5")
+describe "Breadth-first Print", ->
+  it "should be able to work for a root-only tree", ->
+    root = new BinaryTree(5);
+    assert.equal(breadthPrint(root), "5")
 
-    it "should work for an arbitrary depth b-tree", ->
-      # Depth 0
-      root = new BinaryTree(0)
-      $1_node = new BinaryTree(1)
-      $2_node = new BinaryTree(2)
-      $3_node = new BinaryTree(3)
-      $4_node = new BinaryTree(4)
-      $5_node = new BinaryTree(5)
-      $6_node = new BinaryTree(6)
-      $7_node = new BinaryTree(7)
+  it "should work for an arbitrary depth b-tree", ->
+    # Depth 0
+    root = new BinaryTree(0)
+    $1_node = new BinaryTree(1)
+    $2_node = new BinaryTree(2)
+    $3_node = new BinaryTree(3)
+    $4_node = new BinaryTree(4)
+    $5_node = new BinaryTree(5)
+    $6_node = new BinaryTree(6)
+    $7_node = new BinaryTree(7)
 
-      # Depth 1
-      root.setLeft($1_node);
-      root.setRight($2_node);
+    # Depth 1
+    root.setLeft($1_node);
+    root.setRight($2_node);
 
-      # Depth 2
-      $1_node.setLeft($3_node);
-      $1_node.setRight($4_node);
-      $2_node.setLeft($5_node);
-      $2_node.setRight($6_node);
+    # Depth 2
+    $1_node.setLeft($3_node);
+    $1_node.setRight($4_node);
+    $2_node.setLeft($5_node);
+    $2_node.setRight($6_node);
 
-      # Depth 3
-      $4_node.setLeft($7_node);
+    # Depth 3
+    $4_node.setLeft($7_node);
 
-      assert.equal(breadthPrint(root), "0, 1, 2, 3, 4, 5, 6, 7")
+    assert.equal(breadthPrint(root), "0, 1, 2, 3, 4, 5, 6, 7")
+
+describe "Subset Sum Problem", ->
+  it "should work for the array [0]", ->
+    assert.deepEqual(subsetSum([0]), {start: 0, end: 0})
+
+  it "should work for the array [-10, 10] with default sum", ->
+    assert.deepEqual(subsetSum([-10, 10]), {start: 0, end: 1})
+
+  it "should work for the array [-10, 10] with sum 10", ->
+    assert.deepEqual(subsetSum([-10, 10], 10), {start: 1, end: 1})
+
+  it "should NOT work for the array [10, 10] with default sum", ->
+    assert.deepEqual(subsetSum([10, 10]), null)
+
+  it "should NOT work for the array [10, 10] with the sum 100", ->
+    assert.deepEqual(subsetSum([10, 10], 100), null)
+
+  it "should work for the array [2, 4, -6, 10, 18, -2] with default sum", ->
+    assert.deepEqual(subsetSum([2, 4, -6, 10, 18, -2]), {start: 0, end: 2})
