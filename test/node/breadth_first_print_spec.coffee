@@ -1,26 +1,7 @@
 assert = require("assert")
-sqrt = require("../../src/node/square-root").squareRoot
-dfs = require("../../src/node/dnfp").dutchFlagSort
 Queue = require("../../src/node/depth-print").Queue
 BinaryTree = require("../../src/node/depth-print").BinaryTree
 breadthPrint = require("../../src/node/depth-print").breadthPrint
-subsetSum = require("../../src/node/subset-sum").subsetSum
-
-describe "Square Root", ->
-  it "should work for 4", ->
-    assert.equal(sqrt(4), 2)
-
-  it "should work for 16", ->
-    assert.equal(sqrt(16), 4)
-
-  it "should work for 144", ->
-    assert.equal(sqrt(144), 12)
-
-describe "Dutch National Flag Problem", ->
-  it "should work for the array ['red', 'red', 'blue', 'white', 'red', 'blue', 'white']", ->
-    assert.deepEqual(
-      dfs(['red', 'red', 'blue', 'white', 'red', 'blue', 'white'],
-      ['red', 'red', 'red', 'white', 'white', 'blue', 'blue']))
 
 describe "Queue", ->
   it "should be able to be constructed", ->
@@ -89,22 +70,3 @@ describe "Breadth-first Print", ->
     $4_node.setLeft($7_node);
 
     assert.equal(breadthPrint(root), "0, 1, 2, 3, 4, 5, 6, 7")
-
-describe "Subset Sum Problem", ->
-  it "should work for the array [0]", ->
-    assert.deepEqual(subsetSum([0]), {start: 0, end: 0})
-
-  it "should work for the array [-10, 10] with default sum", ->
-    assert.deepEqual(subsetSum([-10, 10]), {start: 0, end: 1})
-
-  it "should work for the array [-10, 10] with sum 10", ->
-    assert.deepEqual(subsetSum([-10, 10], 10), {start: 1, end: 1})
-
-  it "should NOT work for the array [10, 10] with default sum", ->
-    assert.deepEqual(subsetSum([10, 10]), null)
-
-  it "should NOT work for the array [10, 10] with the sum 100", ->
-    assert.deepEqual(subsetSum([10, 10], 100), null)
-
-  it "should work for the array [2, 4, -6, 10, 18, -2] with default sum", ->
-    assert.deepEqual(subsetSum([2, 4, -6, 10, 18, -2]), {start: 0, end: 2})
