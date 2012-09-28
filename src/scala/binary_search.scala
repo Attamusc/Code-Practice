@@ -1,3 +1,5 @@
+package com.attamusc.practice
+
 object BinarySearch {
   def search(query: Int, a: List[Int]) : Int = {
     var mid : Int = a.size / 2
@@ -17,5 +19,5 @@ object BinarySearch {
   }
 }
 
-val index = BinarySearch.search(5, List(1, 2, 2, 3, 4, 5, 6))
-println("Answer: " + index)
+// val index = BinarySearch.search(5, List(1, 2, 2, 3, 4, 5, 6))
+// println("Answer: " + index)

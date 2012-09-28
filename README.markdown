@@ -16,22 +16,50 @@ Repo for practicing implementing common technical questions. Mainly for keeping 
 * Pascal's Triangle (scala)
 * Balanced Parenthesis in String (scala)
 * Counting the number of ways to make change for given amount (scala)
+* (Greedy) Minimum number of coins to create given number (node)
+* Add/Multiply two numbers as strings/arrays problem (node)
+* Give a data structure for and multiply two numbers as strings/arrays problem (node)
+* (Recursive) Minimum number of coins to create given number (node)
 
 ## Todo
 
-* TODO: Page citation count vector Problem: find h_index (sorted and unsorted)
-* TODO: checkRegex function
-* TODO: Array of 0's and 1's problem
-* TODO: Set of minimum average coins for numbers 1 to n 
-* TODO: (Greedy) Minimum number of coins to create given number
-* TODO: Add/Multiply two numbers as strings/arrays problem
-* TODO: Give a data structure for and multiply two numbers as strings/arrays problem
-* TODO: Quicksort
-* TODO: Mergesort
-* TODO: Find the center of a graph
-* TODO: Knapsack Problem
-* TODO: RADIX sort
-* TODO: Red-Black Tree
-* TODO: Visitor Pattern Example
-* TODO: 'Tell, Don't Ask' Pattern Example
-* TODO: Construct a magic square
+### Previous Interview Questions
+
+* Page citation count vector Problem: find h_index (sorted and unsorted)
+* checkRegex function (WooHoo! Non-deterministic finite automata! or brute-force with recursion)
+* Array of 0's and 1's problem
+* Set of minimum average coins for numbers 1 to n, of size m
+* Given a list of login/logout times, return the number of active users for a given interval
+* Find the number of substrings that are palindromes from a given string
+* Determine the most common words in a 1 terabyte file
+* Find the center of a graph
+
+### Classical Problems
+
+* Knapsack Problem
+* Look-and-say sequence
+* Construct a magic square
+
+### Data Structures and Algorithms
+
+* Quicksort
+* Mergesort
+* RADIX sort
+* Red-Black Tree
+* Binary Tree
+* Set
+* Queue
+* Stack
+
+### Design Patterns
+
+* Visitor Pattern Example
+* 'Tell, Don't Ask' Pattern Example
+
+### Code Kata
+
+* Kata Five: Bloom filter-based spell checker
+* Kata Six: Anagrams
+* Kata Nine: Back to the Checkout
+* Kata Eleven: Sorting it Out
+
