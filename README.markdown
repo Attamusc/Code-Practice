@@ -2,7 +2,7 @@
 
 Repo for practicing implementing common technical questions. Mainly for keeping my skills sharp and interview prep (both as an interviewer and interviewee).
 
-## Solved
+# Solved
 
 * Square Root (node)
 * Dutch National Flag Problem (node)
@@ -22,9 +22,11 @@ Repo for practicing implementing common technical questions. Mainly for keeping 
 * (Recursive) Minimum number of coins to create given number (node)
 * (Recursive) checkRegex function (node)
 
-## Todo
+# Todo
 
-### Previous Interview Questions
+## Interesting Interview Questions
+
+### Facebook
 
 * Page citation count vector Problem: find h_index (sorted and unsorted)
 * Array of 0's and 1's problem
@@ -35,12 +37,22 @@ Repo for practicing implementing common technical questions. Mainly for keeping 
 * Determine the most common words in a 1 terabyte file
 * Find the center of a graph
 
-### Classical Problems
+### Spotify
+
+*
+*
+*
+
+### Google
+
+### Interview Street
+
+## Classical Problems
 
 * Knapsack Problem
 * Construct a magic square
 
-### Data Structures and Algorithms
+## Data Structures and Algorithms
 
 * Quicksort
 * Mergesort
@@ -51,12 +63,12 @@ Repo for practicing implementing common technical questions. Mainly for keeping 
 * Queue
 * Stack
 
-### Design Patterns
+## Design Patterns
 
 * Visitor Pattern Example
 * 'Tell, Don't Ask' Pattern Example
 
-### Code Kata
+## Code Kata
 
 * Kata Five: Bloom filter-based spell checker
 * Kata Six: Anagrams
