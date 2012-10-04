@@ -20,14 +20,15 @@ Repo for practicing implementing common technical questions. Mainly for keeping 
 * Add/Multiply two numbers as strings/arrays problem (node)
 * Give a data structure for and multiply two numbers as strings/arrays problem (node)
 * (Recursive) Minimum number of coins to create given number (node)
+* (Recursive) checkRegex function (node)
 
 ## Todo
 
 ### Previous Interview Questions
 
 * Page citation count vector Problem: find h_index (sorted and unsorted)
-* checkRegex function (WooHoo! Non-deterministic finite automata! or brute-force with recursion)
 * Array of 0's and 1's problem
+* Look-and-say sequence
 * Set of minimum average coins for numbers 1 to n, of size m
 * Given a list of login/logout times, return the number of active users for a given interval
 * Find the number of substrings that are palindromes from a given string
@@ -37,7 +38,6 @@ Repo for practicing implementing common technical questions. Mainly for keeping 
 ### Classical Problems
 
 * Knapsack Problem
-* Look-and-say sequence
 * Construct a magic square
 
 ### Data Structures and Algorithms
