@@ -23,3 +23,6 @@ var fizzbuzz = exports.fizzbuzz = function(begin, end) {
 
   return results;
 };
+
+// LOL one-liner fizzbuzz
+// var fizzbuzz = function() { var fizz = '', buzz = ''; for(var i = 0; i <= 100; i++) { console.log((fizz = i % 3 === 0 ? 'Fizz' : '') + (buzz = i % 5 === 0 ? 'Buzz' : '') + (!(fizz || buzz) ? i : '')); }};
